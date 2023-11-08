@@ -1,0 +1,23 @@
+{
+  "version": 2,
+  "dgSpecHash": "7F6mXdDFA/UXiXY+7WqqLDwlyQLnY1zazKslN32nthcB7sO8Ve8ConWZcPA42XCeeMNOWjzQ19Z8Z5ucUIN54g==",
+  "success": true,
+  "projectFilePath": "D:\\Dapr\\Actor\\BasketService\\BasketService\\BasketService.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\NatthawatS\\.nuget\\packages\\dapr.actors\\1.12.0\\dapr.actors.1.12.0.nupkg.sha512",
+    "C:\\Users\\NatthawatS\\.nuget\\packages\\dapr.actors.aspnetcore\\1.12.0\\dapr.actors.aspnetcore.1.12.0.nupkg.sha512",
+    "C:\\Users\\NatthawatS\\.nuget\\packages\\dapr.client\\1.12.0\\dapr.client.1.12.0.nupkg.sha512",
+    "C:\\Users\\NatthawatS\\.nuget\\packages\\google.api.commonprotos\\2.2.0\\google.api.commonprotos.2.2.0.nupkg.sha512",
+    "C:\\Users\\NatthawatS\\.nuget\\packages\\google.protobuf\\3.15.0\\google.protobuf.3.15.0.nupkg.sha512",
+    "C:\\Users\\NatthawatS\\.nuget\\packages\\grpc.core.api\\2.52.0\\grpc.core.api.2.52.0.nupkg.sha512",
+    "C:\\Users\\NatthawatS\\.nuget\\packages\\grpc.net.client\\2.52.0\\grpc.net.client.2.52.0.nupkg.sha512",
+    "C:\\Users\\NatthawatS\\.nuget\\packages\\grpc.net.common\\2.52.0\\grpc.net.common.2.52.0.nupkg.sha512",
+    "C:\\Users\\NatthawatS\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\3.1.0\\microsoft.extensions.logging.abstractions.3.1.0.nupkg.sha512",
+    "C:\\Users\\NatthawatS\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.19.4\\microsoft.visualstudio.azure.containers.tools.targets.1.19.4.nupkg.sha512",
+    "C:\\Users\\NatthawatS\\.nuget\\packages\\system.io.pipelines\\4.7.2\\system.io.pipelines.4.7.2.nupkg.sha512",
+    "C:\\Users\\NatthawatS\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512",
+    "C:\\Users\\NatthawatS\\.nuget\\packages\\system.net.http.json\\5.0.0\\system.net.http.json.5.0.0.nupkg.sha512",
+    "C:\\Users\\NatthawatS\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.5.2\\system.runtime.compilerservices.unsafe.4.5.2.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,43 @@
+version: '3.4'
+services:
+  basketservice:
+    build: 
+       dockerfile: ./BasketService/Dockerfile
+    environment:
+      - DAPR_HTTP_PORT=3500
+    depends_on:
+      - placement
+      - redis
+  basketservice-dapr:
+    image: daprio/daprd:edge
+    command: ["./daprd","--app-id","actor-service","--dapr-http-port","3500","--app-port","80","--resources-path","/resources-docker","--placement-host-address","placement:50006"]
+    network_mode: "service:basketservice"
+    depends_on:
+      - basketservice
+    volumes:
+      - ./resources-docker:/resources-docker
+  
+  basketclient:
+    build: 
+       dockerfile: ./BasketClient/Dockerfile
+    environment:
+      - DAPR_HTTP_PORT=3501
+    depends_on:
+      - placement
+      - redis
+ 
+  basketclient-dapr:
+    image: daprio/daprd:edge
+    command: ["./daprd","--app-id","basket-client","--dapr-http-port","3501","--resources-path","/resources-docker","--placement-host-address","placement:50006"]
+    network_mode: "service:basketclient"
+    depends_on:
+      - basketclient
+    volumes:
+      - ./resources-docker:/resources-docker
+
+  placement:
+    image: daprio/dapr
+    command: ["./placement","-port","50006"]
+  
+  redis:
+    image: redis:alpine
